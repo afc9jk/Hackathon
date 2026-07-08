@@ -1,0 +1,73 @@
+model_id,judge_model_id,category,metric_key,metric_name,mean_score,pass_rate,n
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,advice_accuracy,Advice Accuracy / Financial Correctness,0.14368896484375,0.9,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,completeness_actionability,Completeness / Actionability,0.2095458984375,0.95,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,financial_reasoning_quality,Financial Reasoning Quality,0.208056640625,0.8,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,harmful_recommendations,Harmful Recommendation Rate,0.022623443603515626,1.0,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.124725341796875,1.0,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,robustness_to_rephrasing,Robustness to Rephrasing,0.093878173828125,1.0,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.220703125,0.75,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,ALL,unsupported_claims,Unsupported Claim / Hallucination Rate,0.122637939453125,0.975,40
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,advice_accuracy,Advice Accuracy / Financial Correctness,0.100390625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,completeness_actionability,Completeness / Actionability,0.2087890625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,financial_reasoning_quality,Financial Reasoning Quality,0.196484375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,harmful_recommendations,Harmful Recommendation Rate,0.019647216796875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.1353515625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,robustness_to_rephrasing,Robustness to Rephrasing,0.087255859375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.1857421875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Budgeting & Cash Flow Management,unsupported_claims,Unsupported Claim / Hallucination Rate,0.13271484375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,advice_accuracy,Advice Accuracy / Financial Correctness,0.1404296875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,completeness_actionability,Completeness / Actionability,0.205078125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,financial_reasoning_quality,Financial Reasoning Quality,0.2494140625,0.6,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,harmful_recommendations,Harmful Recommendation Rate,0.0269287109375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.1521484375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,robustness_to_rephrasing,Robustness to Rephrasing,0.09833984375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.225,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Debt Management & Credit,unsupported_claims,Unsupported Claim / Hallucination Rate,0.12333984375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,advice_accuracy,Advice Accuracy / Financial Correctness,0.13291015625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,completeness_actionability,Completeness / Actionability,0.1986328125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,financial_reasoning_quality,Financial Reasoning Quality,0.14873046875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,harmful_recommendations,Harmful Recommendation Rate,0.0301025390625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.11640625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,robustness_to_rephrasing,Robustness to Rephrasing,0.0814453125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.2365234375,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Estate Planning & Legacy,unsupported_claims,Unsupported Claim / Hallucination Rate,0.09013671875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,advice_accuracy,Advice Accuracy / Financial Correctness,0.1197265625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,completeness_actionability,Completeness / Actionability,0.1853515625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,financial_reasoning_quality,Financial Reasoning Quality,0.15654296875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,harmful_recommendations,Harmful Recommendation Rate,0.01981201171875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.0953125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,robustness_to_rephrasing,Robustness to Rephrasing,0.0947265625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.2419921875,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Insurance & Risk Management,unsupported_claims,Unsupported Claim / Hallucination Rate,0.120166015625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,advice_accuracy,Advice Accuracy / Financial Correctness,0.114599609375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,completeness_actionability,Completeness / Actionability,0.1916015625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,financial_reasoning_quality,Financial Reasoning Quality,0.2181640625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,harmful_recommendations,Harmful Recommendation Rate,0.0115966796875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.109814453125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,robustness_to_rephrasing,Robustness to Rephrasing,0.08828125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.166015625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Investing & Wealth Building,unsupported_claims,Unsupported Claim / Hallucination Rate,0.08564453125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,advice_accuracy,Advice Accuracy / Financial Correctness,0.20283203125,0.6,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,completeness_actionability,Completeness / Actionability,0.2419921875,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,financial_reasoning_quality,Financial Reasoning Quality,0.2728515625,0.4,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,harmful_recommendations,Harmful Recommendation Rate,0.01934814453125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.1287109375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,robustness_to_rephrasing,Robustness to Rephrasing,0.10322265625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.23984375,0.6,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Retirement Planning,unsupported_claims,Unsupported Claim / Hallucination Rate,0.1244140625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,advice_accuracy,Advice Accuracy / Financial Correctness,0.149658203125,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,completeness_actionability,Completeness / Actionability,0.2291015625,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,financial_reasoning_quality,Financial Reasoning Quality,0.21298828125,0.6,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,harmful_recommendations,Harmful Recommendation Rate,0.0322021484375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.1609375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,robustness_to_rephrasing,Robustness to Rephrasing,0.09970703125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.226171875,0.4,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Savings & Emergency Funds,unsupported_claims,Unsupported Claim / Hallucination Rate,0.14326171875,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,advice_accuracy,Advice Accuracy / Financial Correctness,0.18896484375,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,completeness_actionability,Completeness / Actionability,0.2158203125,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,financial_reasoning_quality,Financial Reasoning Quality,0.20927734375,0.8,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,harmful_recommendations,Harmful Recommendation Rate,0.02135009765625,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,personalization_context_sensitivity,Personalization & Constraint Sensitivity,0.09912109375,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,robustness_to_rephrasing,Robustness to Rephrasing,0.098046875,1.0,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,uncertainty_referral_behavior,Uncertainty / Referral Behavior,0.2443359375,0.6,5
+google/gemma-4-E2B-it,google/shieldgemma-2b,Tax Planning & Optimization,unsupported_claims,Unsupported Claim / Hallucination Rate,0.16142578125,1.0,5
