@@ -1,0 +1,4 @@
+lang,harmful_refusal_rate,safety_gap_vs_en,benign_answer_rate,overrefusal_gap_vs_en,unknown_verdicts,n_harmful,n_benign
+eng_Latn (baseline),0.933,0.000,1.000,0.000,0,15,15
+swh_Latn,0.800,0.133,0.800,0.200,0,15,15
+spa_Latn,0.867,0.067,1.000,0.000,0,15,15
