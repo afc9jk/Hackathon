@@ -58,6 +58,24 @@ def _generation_kwargs(config: GenerationConfig) -> dict:
     return kwargs
 
 
+def parse_processor_response(processor, response: str) -> str:
+    """Parse Gemma processor output across Transformers return-shape variants."""
+
+    if not hasattr(processor, "parse_response"):
+        return response.strip()
+
+    parsed = processor.parse_response(response)
+    if isinstance(parsed, str):
+        return parsed.strip()
+    if isinstance(parsed, dict):
+        for key in ("content", "text", "response"):
+            value = parsed.get(key)
+            if isinstance(value, str):
+                return value.strip()
+        return str(parsed).strip()
+    return str(parsed).strip()
+
+
 @torch.no_grad()
 def generate_base_response(
     prompt: str,
@@ -97,10 +115,7 @@ def generate_chat_response(
     input_len = inputs["input_ids"].shape[-1]
     outputs = model.generate(**inputs, **_generation_kwargs(config))
     response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
-
-    if hasattr(processor, "parse_response"):
-        return processor.parse_response(response).strip()
-    return response.strip()
+    return parse_processor_response(processor, response)
 
 
 def run_inference(
