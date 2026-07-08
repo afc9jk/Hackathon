@@ -34,14 +34,29 @@ class GenerationConfig:
 
 
 def load_model(model_id: str):
-    """Load a Hugging Face causal language model and processor."""
+    """Load a Hugging Face causal language model and processor.
+
+    Set the env var SCORECARD_LOAD_4BIT=1 to load in 4-bit (needs bitsandbytes).
+    This lets the model fit entirely in a small GPU's VRAM (e.g. a 16GB T4) and
+    avoids the CPU/disk offload that makes generation ~1000x slower. Default
+    behavior is unchanged when the var is unset."""
+
+    import os
 
     processor = AutoProcessor.from_pretrained(model_id)
-    model = AutoModelForCausalLM.from_pretrained(
-        model_id,
-        dtype="auto",
-        device_map="auto",
-    )
+    load_kwargs = {"device_map": "auto"}
+    if os.environ.get("SCORECARD_LOAD_4BIT") == "1":
+        from transformers import BitsAndBytesConfig
+
+        load_kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_quant_type="nf4",
+        )
+    else:
+        load_kwargs["dtype"] = "auto"
+
+    model = AutoModelForCausalLM.from_pretrained(model_id, **load_kwargs)
     model.eval()
     return processor, model
 
