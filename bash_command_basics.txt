@@ -1,0 +1,56 @@
+**Code Set-Up Basics (One of many ways to do it)**
+
+
+#Connect to Rivanna via command line/VSCode:
+
+ssh -Y <computing_id>@login.hpc.virginia.edu
+
+srun -A ds6051-summer -p interactive --time=6:00:00 --mem=24G --reservation=ds6051-summer-hackathon --gres=gpu:1 --pty bash
+
+
+
+#Create and activate virtual environment:
+
+python3.12 -m venv .venv
+
+source .venv/bin/activate
+
+
+
+#Make sure you’re logged into hugging face with your API token:
+
+pip install huggingface_hub
+
+huggingface-cli login
+
+
+
+#If you’re trying to run other team-member’s code and are running into dependency issues, make sure your environments/versions match:
+
+pip list
+
+pip install --upgrade package_name==1.2.3
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+
+
+#Basic Github commands (*make sure you have your token):
+
+git clone
+
+git status
+
+git add .  #can list specific files here instead of adding everything with “.”
+
+git commit -m “write what you updated here”
+
+git push
+
+	#If using a branch to avoid merge issues:
+
+	git checkout -b your-branch-name
+
+	git push -u origin your-branch-name
